@@ -1,0 +1,86 @@
+[
+ {
+  "slug": "zeta-pluxee",
+  "title": "Zeta: Pluxee Split Payments Case Study",
+  "goal": "New Feature PRD",
+  "desc": "Split checkout for Pluxee meal cards, so food goes on Pluxee and the rest on UPI or a card: research, MoSCoW, wireframes, technical design and rollout.",
+  "img": "https://www.pluxee.in/sites/g/files/jclxxe301/files/2026-01/Pluxee_Image%20Edit-01%202.webp"
+ },
+ {
+  "slug": "brandfolio-ai",
+  "title": "Brandfolio AI",
+  "goal": "Product Building",
+  "desc": "Two-sided platform connecting early-stage brands with creators: product, wireframes, live site and go-to-market plan.",
+  "img": "assets/case/brandfolio-ai/01.png"
+ },
+ {
+  "slug": "temu-teardown",
+  "title": "Temu: Onboarding and Trust Teardown",
+  "goal": "Problem Solving",
+  "desc": "First-time-user teardown of Temu's cluttered onboarding, prize wheel and coupon flow, with prioritised fixes.",
+  "img": "assets/case/temu-teardown/01.png"
+ },
+ {
+  "slug": "upi-teardown",
+  "title": "UPI Payment System Teardown",
+  "goal": "Teardown",
+  "desc": "How UPI works end to end, who it changed things for, and where it goes next.",
+  "img": "assets/case/upi-teardown/01.png"
+ },
+ {
+  "slug": "udchalo-teardown",
+  "title": "UdChalo: Favourite Product Teardown",
+  "goal": "Favourite Product",
+  "desc": "Pain points, prioritised improvements, metrics and risks for a travel platform built for defence personnel.",
+  "img": "assets/case/udchalo-teardown/01.png"
+ },
+ {
+  "slug": "blinkit-research",
+  "title": "Blinkit Delivery Partner App: Product Research",
+  "goal": "Problem Solving",
+  "desc": "15 days of research with a delivery partner on rewards, notifications and 10-minute delivery pressure.",
+  "img": "assets/case/blinkit-research/01.png"
+ },
+ {
+  "slug": "pm-lifecycle",
+  "title": "From Ideas to Impact: The Product Management Lifecycle",
+  "goal": "Projects",
+  "desc": "A visual map of how a product moves from stakeholder insights to validated, adopted features.",
+  "img": "assets/case/pm-lifecycle/01.png"
+ },
+ {
+  "slug": "woco-goal-module",
+  "title": "WoCo Goal Module: HR Tech PRD",
+  "goal": "New Feature PRD",
+  "desc": "PRD for a standalone goal-management module with leaderboard integration, targeting a 60% cut in manual HR tracking.",
+  "img": "assets/case/woco-goal-module/01.png"
+ },
+ {
+  "slug": "student-tracker",
+  "title": "Student Tracker (Frappe)",
+  "goal": "Problem Solving",
+  "desc": "Problem brief, user stories, backlog and Sprint 1 plan for an NGO student-count tracking tool.",
+  "img": "assets/case/student-tracker/01.png"
+ },
+ {
+  "slug": "stick-dating",
+  "title": "Stick Dating App: Path to $10M ARR",
+  "goal": "Problem Solving",
+  "desc": "Product, marketing and expansion plan to take a dating app to $10M ARR in 6 months.",
+  "img": ""
+ },
+ {
+  "slug": "indus-app-store",
+  "title": "Elevating User Engagement on Indus App Store",
+  "goal": "Projects",
+  "desc": "Short videos, reviews and dark mode drove +30% session duration and +20% retention.",
+  "img": ""
+ },
+ {
+  "slug": "smart-spending",
+  "title": "Smart Spending Insights for UPI Apps",
+  "goal": "New Feature PRD",
+  "desc": "Voice tags, category icons and AI auto-tagging to help users see where their money goes.",
+  "img": "assets/case/smart-spending/01.png"
+ }
+]

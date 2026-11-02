@@ -10,15 +10,11 @@
   /* ---------- Content from config.js ---------- */
   const C = window.SITE || {};
   $$('[data-bind]').forEach(el => { const v = C[el.dataset.bind]; if (v) el.textContent = v; });
-  if (C.name) document.title = `${C.signature || C.name} | Editor & VFX Artist`;
-  const mail = C.email ? `mailto:${C.email}` : '#kontak';
+  $$('[data-href]').forEach(el => { if (C[el.dataset.href]) el.href = C[el.dataset.href]; });
+  const mail = `mailto:${C.email}`;
   $('#cEmail').href = mail;
   $('#chat').href = mail;
-  const tel = (C.phone || '').replace(/[^+\d]/g, '');
-  $('#cTel').href = tel ? `tel:${tel}` : '#kontak';
-  const ig = C.instagram ? `https://instagram.com/${C.instagram.replace('@', '')}` : '#kontak';
-  $('#cIg').href = ig;
-  $('#sIg').href = ig;
+  $('#cTel').href = `tel:${(C.phone || '').replace(/[^+\d]/g, '')}`;
 
   /* ---------- Page interactions ---------- */
   const filterBtns = $$('.filters button');
@@ -27,7 +23,7 @@
     filterBtns.forEach(b => b.classList.toggle('is-on', b === btn));
     let shown = 0;
     cards.forEach(card => {
-      const hit = btn.dataset.f === 'all' || card.dataset.tags.split(' ').includes(btn.dataset.f);
+      const hit = btn.dataset.f === 'all' || card.dataset.tags === btn.dataset.f;
       card.hidden = !hit;
       if (hit) shown++;
     });
@@ -37,15 +33,6 @@
 
   const compare = $('#compare');
   $('input', compare).addEventListener('input', e => compare.style.setProperty('--pos', `${e.target.value}%`));
-
-  const lb = $('#lb');
-  $$('.shot').forEach(shot => shot.addEventListener('click', () => {
-    $('img', lb).src = shot.dataset.full;
-    $('img', lb).alt = shot.dataset.title;
-    $('p', lb).textContent = shot.dataset.title;
-    lb.showModal();
-  }));
-  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
 
   /* ---------- Agent build engine ---------- */
   const wantsMotion = root.classList.contains('js');

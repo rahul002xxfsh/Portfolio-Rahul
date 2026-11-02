@@ -1,10 +1,9 @@
-/* Edit this file to personalise the site. Everything else reads from here. */
+/* Contact details and links used across the site. */
 window.SITE = {
-  name: 'RAHUL',                 // Hero name and logo
-  signature: 'Rahul',            // Script signature on the red quote card
-  initial: 'R',                  // Letter on the black boot screen
-  email: 'hello@example.com',    // Placeholder: replace with your address
-  instagram: '@yourhandle',      // Placeholder
-  phone: '+00 000 0000 000',     // Placeholder
-  location: 'Indonesia'
+  email: 'derahul2003@gmail.com',
+  phone: '+91 9503720603',
+  location: 'Pune, India',
+  resume: 'https://drive.google.com/file/d/15-ApOpcG2wX_p5xWnwcSc9QfDOrUg-vU/view?usp=sharing',
+  linkedin: 'https://www.linkedin.com/in/rahul-de-3040a71a0',
+  github: 'https://github.com/rahul002xxfsh'
 };

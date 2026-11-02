@@ -1,8 +1,8 @@
 # Portfolio Rahul
 
-A dark, cinematic editor and VFX portfolio where 24 AI-agent cursors build the page in front of you as you scroll.
+Rahul De's product management portfolio, where 24 AI-agent cursors build the page in front of you as you scroll.
 
-No framework and no build step: `index.html`, `styles.css`, `app.js` and `config.js`.
+No framework: `index.html`, `styles.css`, `app.js` and `config.js`, plus 12 full case-study pages in `work/`.
 
 ## Run locally
 
@@ -12,14 +12,18 @@ python3 -m http.server 4173
 
 Then open http://127.0.0.1:4173.
 
-## Make it yours
+## Content
 
-- **Name and contact details:** edit `config.js`. The email, Instagram handle and phone are placeholders.
-- **Portrait:** replace `assets/art/portrait.png` with your own transparent cut-out (1200×1400).
-- **Project frames:** replace `office.jpg`, `trailer.jpg`, `city.jpg` and `clay.jpg` in `assets/art/`. `city.jpg` and `clay.jpg` are the after and before sides of the comparison slider.
-- **Copy:** awards, client logos, education and timeline text live in `index.html` and are sample content.
+- **Contact details and links:** `config.js`.
+- **Homepage copy:** `index.html`.
+- **Case studies:** `work/*.html`, generated from the public Notion portfolio. To refresh them after editing Notion:
 
-`tools/art.html` and `tools/render-art.sh` regenerate the stand-in artwork.
+```bash
+python3 tools/notion_pull.py
+python3 tools/build_cases.py
+```
+
+- **Portrait:** `assets/art/portrait.png`. `tools/cutout.swift` removes a photo's background with Apple Vision.
 
 ## How the build animation works
 
