@@ -47,7 +47,7 @@
   const pill = $('#pill');
   const ui = {
     text: $('#pText'), agents: $('#pAgents'), layers: $('#pLayers'), bar: $('#pBar'),
-    main: $('#pMain'), speed: $('#pSpeed'), sound: $('#pSound'), close: $('#pClose')
+    main: $('#pMain'), speed: $('#pSpeed'), sound: $('#pSound')
   };
   const scanT = $('#scanT');
   const scanL = $('#scanL');
@@ -455,7 +455,6 @@
     S.muted = !S.muted;
     ui.sound.setAttribute('aria-pressed', String(!S.muted));
   });
-  ui.close.addEventListener('click', dismiss);
 
   const frame = (now) => {
     const ms = Math.min(now - (S.last || now), 120);
