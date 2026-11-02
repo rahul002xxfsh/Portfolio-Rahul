@@ -5,5 +5,6 @@ window.SITE = {
   location: 'Pune, India',
   resume: 'https://drive.google.com/file/d/15-ApOpcG2wX_p5xWnwcSc9QfDOrUg-vU/view?usp=sharing',
   linkedin: 'https://www.linkedin.com/in/rahul-de-3040a71a0',
-  github: 'https://github.com/rahul002xxfsh'
+  github: 'https://github.com/rahul002xxfsh',
+  notion: 'https://grape-frog-a9c.notion.site/Rahul-de-26363e415d3880919846df2ca2bbb7ba'
 };

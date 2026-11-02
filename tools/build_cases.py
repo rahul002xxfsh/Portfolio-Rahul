@@ -128,7 +128,7 @@ TPL = '''<!doctype html>
 <body>
 <header class="ctop"><a class="clogo" href="../index.html">RAHUL DE<i>.</i></a><a class="cback" href="../index.html#work">← All work</a></header>
 <main class="cwrap">
-<div class="chead"><p class="ckick">{num} / {goal}</p><h1>{title}</h1><p class="cdesc">{desc}</p></div>
+<div class="chead"><p class="ckick">{num} / {goal}</p><h1>{title}</h1><p class="cdesc">{desc}</p><a class="cnotion" href="{nurl}" target="_blank" rel="noopener">View in Notion ↗</a></div>
 <div class="cbody"><nav class="ctoc" aria-label="On this page">{toc}</nav><article class="prose">{body}</article></div>
 <nav class="cnext"><a href="{nslug}.html"><small>Next case study</small><span>{ntitle} →</span></a></nav>
 </main>
@@ -149,7 +149,7 @@ def main():
         body = re.sub(r'<aside class="callout">\s*<span></span><div></div></aside>', '', body)
         toc = ''.join(f'<a href="#{h}">{html.escape(t)}</a>' for h, t in pg.toc if t)
         nx = PROJECTS[(n + 1) % len(PROJECTS)]
-        page = TPL.format(title=html.escape(title), desc=html.escape(desc), num=f'{n+1:02d}', goal=html.escape(goal), toc=toc, body=body, nslug=nx[0], ntitle=html.escape(nx[2]), mermaid=MERMAID if 'class="mermaid"' in body else '')
+        page = TPL.format(title=html.escape(title), desc=html.escape(desc), num=f'{n+1:02d}', goal=html.escape(goal), toc=toc, body=body, nslug=nx[0], ntitle=html.escape(nx[2]), nurl='https://grape-frog-a9c.notion.site/'+d['id'].replace('-',''), mermaid=MERMAID if 'class="mermaid"' in body else '')
         open(f'{ROOT}/work/{slug}.html', 'w').write(page)
         cards.append({'slug':slug,'title':title,'goal':goal,'desc':desc,'img':(pg.first_img or '').replace('../','')})
         words = len(re.sub('<[^>]+>',' ',body).split())
