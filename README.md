@@ -2,7 +2,7 @@
 
 Rahul De's product management portfolio, where 24 AI-agent cursors build the page in front of you as you scroll.
 
-No framework: `index.html`, `styles.css`, `app.js` and `config.js`, plus 12 full case-study pages in `work/`.
+No framework: `index.html`, `styles.css`, `app.js` and `config.js`, plus 13 full case-study pages in `work/`.
 
 ## Run locally
 

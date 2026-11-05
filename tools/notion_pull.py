@@ -10,6 +10,7 @@ PROJECTS = {
  'pm-lifecycle':'28663e415d388044b477f831a67b86c8','woco-goal-module':'27b63e415d38809baeaccdde3d14fd64',
  'student-tracker':'28563e415d3880288506c9e4046b289f','stick-dating':'2a363e415d3880e6922ae3c3745fb7f0',
  'indus-app-store':'2b563e415d388018a23bc4ec0fbf0bf8','smart-spending':'2b563e415d38802eb591e26b3a2d9fd6',
+ 'gatepass':'40f63e415d388138a542c7f09df6d285',
  'brandfolio-full':'26363e415d38813c949dd433eda01d69','exp-brandfolio':'26363e415d38810e8b81d4cc54a1a61b','exp-sapmen':'26363e415d3881e9bfa1e15d0c31958e',
  'exp-pawzz':'26363e415d3881e6ba3ee45665c4a723','home':'26363e415d3880919846df2ca2bbb7ba',
 }

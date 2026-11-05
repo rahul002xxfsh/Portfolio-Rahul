@@ -17,6 +17,7 @@ PROJECTS = [
  ('stick-dating','stick-dating','Stick Dating App: Path to $10M ARR','Problem Solving','Product, marketing and expansion plan to take a dating app to $10M ARR in 6 months.'),
  ('indus-app-store','indus-app-store','Elevating User Engagement on Indus App Store','Projects','Short videos, reviews and dark mode drove +30% session duration and +20% retention.'),
  ('smart-spending','smart-spending','Smart Spending Insights for UPI Apps','New Feature PRD','Voice tags, category icons and AI auto-tagging to help users see where their money goes.'),
+ ('gatepass','gatepass','Gatepass: OAuth Approval Guides for Developers','Product Building','Searchable OAuth setup guides with real wait times, blocker fallbacks and agent-vs-human steps, plus a live AI agent that writes guides for any app. Live at oauth-assignment.vercel.app.'),
 ]
 COLORS = {'red':'#ff7b86','blue':'#74b4ff','green':'#6fdc9b','yellow':'#f3cf6b','orange':'#f7a35c','purple':'#c3a1ff','pink':'#ff9cc7','brown':'#d0a98c','gray':'#9a97a0'}
 SLUG = {}
@@ -64,6 +65,8 @@ class Page:
                 url = json.load(urllib.request.urlopen(r, timeout=30))['signedUrls'][0]
                 open(path, 'wb').write(urllib.request.urlopen(urllib.request.Request(url, headers={'user-agent':'Mozilla/5.0'}), timeout=60).read())
             src = f'../assets/case/{self.slug}/{name}'
+        # Images hosted in this repo (raw GitHub, used so Notion can show them) load locally on the site.
+        src = src.replace('https://raw.githubusercontent.com/rahul002xxfsh/Portfolio-Rahul/main/', '../')
         self.first_img = self.first_img or src
         alt = html.escape(re.sub('<[^>]+>', '', cap)) or 'Case study image'
         return f'<figure><img src="{html.escape(src, True)}" alt="{alt}" loading="lazy">' + (f'<figcaption>{cap}</figcaption>' if cap else '') + '</figure>'
