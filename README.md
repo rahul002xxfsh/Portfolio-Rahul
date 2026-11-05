@@ -16,6 +16,7 @@ Then open http://127.0.0.1:4173.
 
 - **Contact details and links:** `config.js`.
 - **Homepage copy:** `index.html`.
+- **Tools section:** edit the lists in `tools/tools_section.py` and run it. It skips anything already in that section.
 - **Case studies:** `work/*.html`, generated from the public Notion portfolio. To refresh them after editing Notion:
 
 ```bash

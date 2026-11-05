@@ -99,6 +99,13 @@ section{position:relative;scroll-margin-top:7rem}
 .cap p{margin-top:.4rem;font:500 1.1rem/1.6 Manrope,sans-serif;color:#8d8a91}.cap:hover h3{color:var(--pink)}.cap span{color:#a5a2a9;font-size:1.5rem}
 .empty{margin-top:3rem;padding:6rem 0;text-align:center;color:var(--mute);border:1px dashed #26262e}
 .clients-head{display:flex;justify-content:space-between;align-items:flex-end;margin-top:8.6rem}
+.toolcats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3.6rem 3.2rem;margin-top:3.6rem;padding-top:3.6rem;border-top:1px solid #15151b}
+.tcat h3{display:flex;align-items:baseline;gap:.8rem;font:600 1.05rem/1.4 "Inter Tight",sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--pink)}
+.tcat h3 small{font:500 1rem/1 Manrope,sans-serif;letter-spacing:0;color:#6f6c75}
+.tcat ul{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
+.tcat li{max-width:100%;overflow-wrap:anywhere;padding:.6rem 1.1rem;border:1px solid #23232b;border-radius:10rem;font:600 1.2rem/1.2 "Inter Tight",sans-serif;color:#dcd9dd;transition:border-color .2s,color .2s}
+.tcat li:hover{border-color:var(--red);color:#fff}
+.tcat li i{margin-left:.5rem;font-style:normal;font-weight:500;color:#7f7c86}
 .logos{display:flex;align-items:center;justify-content:space-between;margin-top:3.2rem;height:9.4rem}
 .logos span{font:700 2.1rem/1 "Inter Tight",sans-serif;letter-spacing:-.02em}.logos small{font:600 .75rem/1 "Inter Tight",sans-serif;letter-spacing:.2em}
 .lg-n{font:400 7.4rem/1 Anton,sans-serif;background:linear-gradient(90deg,#b20710,#e50914 55%,#a10610);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -284,6 +291,7 @@ footer{padding:7rem var(--pad) 3.4rem}
   .work{padding-top:3rem}.work-head{align-items:flex-start}.ttl,.ttl.up{font-size:3rem}
   .filters{gap:2.2rem;overflow-x:auto;height:4rem;scrollbar-width:none}.filters button{flex:none}.sort{display:none}
   .cards{grid-template-columns:1fr}
+  .toolcats{grid-template-columns:minmax(0,1fr);gap:2.8rem}.tcat li{font-size:1.25rem}
   .clients-head{margin-top:5rem}.logos{flex-wrap:wrap;height:auto;gap:2.6rem 3rem;justify-content:space-around}
   .lg-n{font-size:5.6rem}.lg-magma{font-size:2.8rem}.lg-rain{font-size:2.6rem}
   .recog,.raw{grid-template-columns:1fr}.recog{padding:5rem var(--pad)}.recog-l .big{font-size:5rem}.laurel{margin-left:1rem}
