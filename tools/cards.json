@@ -1,5 +1,12 @@
 [
  {
+  "slug": "gatepass",
+  "title": "Gatepass: OAuth Approval Guides for Developers",
+  "goal": "Product Building",
+  "desc": "Searchable OAuth setup guides with real wait times, blocker fallbacks and agent-vs-human steps, plus a live AI agent that writes guides for any app. Live at oauth-assignment.vercel.app.",
+  "img": "assets/case/gatepass/01.png"
+ },
+ {
   "slug": "zeta-pluxee",
   "title": "Zeta: Pluxee Split Payments Case Study",
   "goal": "New Feature PRD",
@@ -82,12 +89,5 @@
   "goal": "New Feature PRD",
   "desc": "Voice tags, category icons and AI auto-tagging to help users see where their money goes.",
   "img": "assets/case/smart-spending/01.png"
- },
- {
-  "slug": "gatepass",
-  "title": "Gatepass: OAuth Approval Guides for Developers",
-  "goal": "Product Building",
-  "desc": "Searchable OAuth setup guides with real wait times, blocker fallbacks and agent-vs-human steps, plus a live AI agent that writes guides for any app. Live at oauth-assignment.vercel.app.",
-  "img": "assets/case/gatepass/01.png"
  }
 ]

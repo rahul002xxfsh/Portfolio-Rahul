@@ -5,6 +5,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 SRC = os.path.join(ROOT, 'tools', 'notion')
 API = 'https://grape-frog-a9c.notion.site/api/v3/getSignedFileUrls'
 PROJECTS = [
+ ('gatepass','gatepass','Gatepass: OAuth Approval Guides for Developers','Product Building','Searchable OAuth setup guides with real wait times, blocker fallbacks and agent-vs-human steps, plus a live AI agent that writes guides for any app. Live at oauth-assignment.vercel.app.'),
  ('zeta-pluxee','zeta-pluxee','Zeta: Pluxee Split Payments Case Study','New Feature PRD','Split checkout for Pluxee meal cards, so food goes on Pluxee and the rest on UPI or a card: research, MoSCoW, wireframes, technical design and rollout.'),
  ('brandfolio-ai','brandfolio-full','Brandfolio AI','Product Building','Two-sided platform connecting early-stage brands with creators: product, wireframes, live site and go-to-market plan.'),
  ('temu-teardown','temu-teardown','Temu: Onboarding and Trust Teardown','Problem Solving',"First-time-user teardown of Temu's cluttered onboarding, prize wheel and coupon flow, with prioritised fixes."),
@@ -17,7 +18,6 @@ PROJECTS = [
  ('stick-dating','stick-dating','Stick Dating App: Path to $10M ARR','Problem Solving','Product, marketing and expansion plan to take a dating app to $10M ARR in 6 months.'),
  ('indus-app-store','indus-app-store','Elevating User Engagement on Indus App Store','Projects','Short videos, reviews and dark mode drove +30% session duration and +20% retention.'),
  ('smart-spending','smart-spending','Smart Spending Insights for UPI Apps','New Feature PRD','Voice tags, category icons and AI auto-tagging to help users see where their money goes.'),
- ('gatepass','gatepass','Gatepass: OAuth Approval Guides for Developers','Product Building','Searchable OAuth setup guides with real wait times, blocker fallbacks and agent-vs-human steps, plus a live AI agent that writes guides for any app. Live at oauth-assignment.vercel.app.'),
 ]
 COLORS = {'red':'#ff7b86','blue':'#74b4ff','green':'#6fdc9b','yellow':'#f3cf6b','orange':'#f7a35c','purple':'#c3a1ff','pink':'#ff9cc7','brown':'#d0a98c','gray':'#9a97a0'}
 SLUG = {}
