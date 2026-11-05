@@ -105,6 +105,10 @@ section{position:relative;scroll-margin-top:7rem}
 .tcat ul{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem}
 .tcat li{max-width:100%;overflow-wrap:anywhere;padding:.6rem 1.1rem;border:1px solid #23232b;border-radius:10rem;font:600 1.2rem/1.2 "Inter Tight",sans-serif;color:#dcd9dd;transition:border-color .2s,color .2s}
 .tcat li:hover{border-color:var(--red);color:#fff}
+.tcat li{display:inline-flex;align-items:center;gap:.7rem}
+.tcat li img{width:1.6rem;height:1.6rem;flex:none;object-fit:contain}
+.mono{display:inline-grid;place-items:center;width:1.7rem;height:1.7rem;flex:none;border-radius:.4rem;background:#2a2a33;font:800 1rem/1 "Inter Tight",sans-serif;color:#f4f2f1}
+.logos span{display:inline-flex;align-items:center;gap:1rem}.logos img{width:2.6rem;height:2.6rem;object-fit:contain}.logos .mono{width:2.6rem;height:2.6rem;font-size:1.5rem;border-radius:.6rem}
 .tcat li i{margin-left:.5rem;font-style:normal;font-weight:500;color:#7f7c86}
 .logos{display:flex;align-items:center;justify-content:space-between;margin-top:3.2rem;height:9.4rem}
 .logos span{font:700 2.1rem/1 "Inter Tight",sans-serif;letter-spacing:-.02em}.logos small{font:600 .75rem/1 "Inter Tight",sans-serif;letter-spacing:.2em}
